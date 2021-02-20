@@ -5,20 +5,13 @@ use Povarnitcina\MyLog;
 use Povarnitcina\PovarExeption;
 use Povarnitcina\Solve;
 
-include "core/LogAbstract.php";
-include "core/LogInterface.php";
-include 'Povarnitcina/PovarExeption.php';
-include "core/EquationInterface.php";
-include "Povarnitcina/Solve.php";
-include "Povarnitcina/Ksolve.php";
-include "Povarnitcina/MyLog.php";
-
+require __DIR__ . '/vendor/autoload.php';
 
 ini_set("display_errors", 1);
 error_reporting(-1);
 
 try {
-    $version = file_get_context("version.txt");
+    $version = file_get_contents("version");
     MyLog::log("Версия программы ".$version);
     $b = new Ksolve();
     $values = array();

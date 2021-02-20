@@ -1,0 +1,22 @@
+{
+    "name": "povar0305/trpo",
+    "type": "project",
+    "authors": [{
+        "name": "Povarnitcina Sofia",
+        "email": "soficko.sofi@yandex.ru"
+    }],
+    "repositories": [{
+            "type": "vcs",
+            "url": "https://github.com/rok9ru/trpo-core.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/povar0305/povarnitcina.git"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "rok9ru/trpo-core": "^2.0",
+        "povar0305/povarnitcina": "^1.0"
+    }
+}
